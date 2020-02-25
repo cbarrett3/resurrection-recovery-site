@@ -10,7 +10,7 @@
 <meta name="author" content="ThemeMascot" />
 
 <!-- Page Title -->
-<title>GreenWorld - Nonprofit Environment HTML5 Template</title>
+<title>Home | RR</title>
 
 <!-- Favicon and Touch Icons -->
 <link href="images/favicon.png" rel="shortcut icon" type="image/png">
@@ -37,8 +37,13 @@
 <!-- CSS | Style css. This is the file where you can place your own custom css code. Just uncomment it and use it. -->
 <!-- <link href="css/style.css" rel="stylesheet" type="text/css"> -->
 
+<!-- Revolution Slider 5.x CSS settings -->
+<link  href="js/revolution-slider/css/settings.css" rel="stylesheet" type="text/css"/>
+<link  href="js/revolution-slider/css/layers.css" rel="stylesheet" type="text/css"/>
+<link  href="js/revolution-slider/css/navigation.css" rel="stylesheet" type="text/css"/>
+
 <!-- CSS | Theme Color -->
-<link href="css/colors/theme-skin-green.css" rel="stylesheet" type="text/css">
+<link href="css/colors/theme-skin-blue-gray.css" rel="stylesheet" type="text/css">
 
 <!-- external javascripts -->
 <script src="js/jquery-2.2.4.min.js"></script>
@@ -47,1393 +52,790 @@
 <!-- JS | jquery plugin collection for this theme -->
 <script src="js/jquery-plugin-collection.js"></script>
 
+<!-- Revolution Slider 5.x SCRIPTS -->
+<script src="js/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
+<script src="js/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+
 <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 <!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
-<style>
-  .text-red {
-    color: #FF5722;
-  }
-  .demo-box {
-    margin-bottom: 50px;
-  }
-  .overlay2 {
-    margin-top: 15px;
-  }
-  .img-thumbnail {
-    border: 1px solid #eee;
-    opacity: 0.95;
-  }
-  .photonail2:hover .img-thumbnail {
-    border: 1px solid #aaa;
-    opacity: 1;
-  }
-  .newly-added::after {
-    /*background: rgba(0, 0, 0, 0) url("demo-images/new.png") repeat scroll 0 0;*/
-    content: "";
-    height: 50px;
-    position: absolute;
-    right: -5px;
-    top: 38px;
-    width: 60px;
-  }
-
-  .feature-box {
-    margin-bottom: 20px;
-  }
-  .feature-box .feature-box-icon {
-    border-radius: 50%;
-    float: left;
-    height: 30px;
-    line-height: 30px;
-    margin-right: 10px;
-    margin-top: -5px;
-    text-align: center;
-    width: 30px;
-  }
-  .feature-box .feature-box-icon i {
-    font-size: 14px;
-    padding: 3px;
-  }
-  .feature-box .feature-box-info h5 {
-    font-size: 14px;
-  }
-  .demo-gallery {
-    position: relative;
-    padding: 10px;
-    overflow: hidden;
-  }
-  .gallery-item .gallery-thumb img {
-    border-radius: 3px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-  }
-  .gallery-item:hover .gallery-thumb img {
-    box-shadow: 0 20px 35px 2px rgba(0, 0, 0, 0.25);
-    transform: scale(1.03);
-  }
-  .portfolio-filter a {
-    color: #888;
-  }
-</style>
 </head>
-<body class="bg-black-222">
+<body class="">
 <div id="wrapper" class="clearfix">
   <!-- preloader -->
-  <!--<div id="preloader">
+  <div id="preloader">
     <div id="spinner">
       <div class="preloader-dot-loading">
         <div class="cssload-loading"><i></i><i></i><i></i><i></i></div>
       </div>
     </div>
     <div id="disable-preloader" class="btn btn-default btn-sm">Disable Preloader</div>
-  </div>-->
+  </div>
   
-  <!-- start main-content -->
-  <div class="main-content">
-    <section id="home" class="inner-header divider parallax layer-overlay overlay-white-9" data-bg-img="http://placehold.it/1920x1280">
-      <div class="container-fluid pt-100 pb-50"> 
-        <!-- Section Content -->
-        <div class="section-content text-center">
-          <div class="row">
-            <div class="col-md-10 col-md-push-1"> 
-              <img alt="logo" src="images/logo-wide.png">
-              <h4 class="text-center mb-40"> Nonprofit Environment HTML5 Template </h4>
-              <h4 class="font-raleway text-theme-colored">Built with</h4>
-              <img alt="LESS CSS" src="http://lesscss.org/public/img/logo.png">
-
-              <h4 class="text-center text-theme-colored mb-40">
-                <small>Built with LESS & Bootstrap 3.x</small>
-                <br><small>Active Paypal Donation Forms</small>
-                <br><small>Active Contact/Subscribe/Job Apply/Appontment Forms</small>
-                <br><small>320+ HTML Pages</small>
-              </h4>
-
-              <div class="go-down text-center mt-30"><a class="font-24 mt-30 smooth-scroll-to-target btn-orange" href="#multipage-layouts"><i class="fa fa-chevron-down font-20 infinite animated fadeInDown"></i></a></div>
-            </div>
-          </div>
-        </div> 
-       </div>
-    </section>
- 
-    <section class="">
-      <div class="container-fluid pr-90 pl-90">
-        <div class="section-content">
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="text-white text-center mb-40">20+ Layouts and Counting...</h3>
-              <!-- Works Filter -->
-              <div class="portfolio-filter text-center mb-10">
-                <a href="#" class="active" data-filter="*">All</a>
-                <a href="#multi" class="" data-filter=".multi">Multipage layout</a>
-                <a href="#single" class="" data-filter=".single">Singlepage layout</a>
-                <!-- <a href="#hot" class="" data-filter=".hot">Hot layout</a> -->
-                <a href="#boxed" class="" data-filter=".boxed">Boxed Layout</a>
-                <!-- <a href="#dark" class="" data-filter=".dark">Dark Layout</a> -->
-                <a href="#rtl" class="" data-filter=".rtl">RTL Layout</a>
-              </div>
-              <div class="mb-30 text-center"><a href="#herotemplates" class="smooth-scroll-to-target font-16">RevSlider Hero Templates (Ready to Use 60 Examples)</a></div>
-              <!-- End Works Filter -->
-              
-              <!-- Portfolio Gallery Grid -->
-              <div id="grid" class="gallery-isotope grid-3 gutter-60 clearfix">
-
-                <!-- Portfolio Item Start -->
-                <div class="gallery-item multi">
-                  <div class="demo-gallery">
-                    <div class="gallery-thumb">
-                      <a target="_blank" href="index-mp-layout1.html">
-                      <img class="img-fullwidth" alt="" src="http://placehold.it/530x570">
-                        <h4 class="mt-20 font-16 text-center text-white">Multipage Layout 1</h4>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Portfolio Item End -->
-
-                <!-- Portfolio Item Start -->
-                <div class="gallery-item multi">
-                  <div class="demo-gallery">
-                    <div class="gallery-thumb">
-                      <a target="_blank" href="index-mp-layout2.html">
-                      <img class="img-fullwidth" alt="" src="http://placehold.it/530x570">
-                        <h4 class="mt-20 font-16 text-center text-white">Multipage Layout 2</h4>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Portfolio Item End -->
-
-                <!-- Portfolio Item Start -->
-                <div class="gallery-item multi">
-                  <div class="demo-gallery">
-                    <div class="gallery-thumb">
-                      <a target="_blank" href="index-mp-layout3.html">
-                      <img class="img-fullwidth" alt="" src="http://placehold.it/530x570">
-                        <h4 class="mt-20 font-16 text-center text-white">Multipage Layout 3</h4>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Portfolio Item End -->
-
-                <!-- Portfolio Item Start -->
-                <div class="gallery-item multi">
-                  <div class="demo-gallery">
-                    <div class="gallery-thumb">
-                      <a target="_blank" href="index-mp-layout4.html">
-                      <img class="img-fullwidth" alt="" src="http://placehold.it/530x570">
-                        <h4 class="mt-20 font-16 text-center text-white">Multipage Layout 4</h4>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Portfolio Item End -->
-
-                <!-- Portfolio Item Start -->
-                <div class="gallery-item multi">
-                  <div class="demo-gallery">
-                    <div class="gallery-thumb">
-                      <a target="_blank" href="index-mp-layout5.html">
-                      <img class="img-fullwidth" alt="" src="http://placehold.it/530x570">
-                        <h4 class="mt-20 font-16 text-center text-white">Multipage Layout 5</h4>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Portfolio Item End -->
-
-                <!-- Portfolio Item Start -->
-                <div class="gallery-item single">
-                  <div class="demo-gallery">
-                    <div class="gallery-thumb">
-                      <a target="_blank" href="index-sp-layout1.html">
-                        <img class="img-fullwidth" alt="" src="http://placehold.it/530x570">
-                        <h4 class="mt-20 font-16 text-center text-white">Singlepage Layout 1</h4>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Portfolio Item End -->
-
-                <!-- Portfolio Item Start -->
-                <div class="gallery-item single">
-                  <div class="demo-gallery">
-                    <div class="gallery-thumb">
-                      <a target="_blank" href="index-sp-layout2.html">
-                        <img class="img-fullwidth" alt="" src="http://placehold.it/530x570">
-                        <h4 class="mt-20 font-16 text-center text-white">Singlepage Layout 2</h4>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Portfolio Item End -->
-
-                <!-- Portfolio Item Start -->
-                <div class="gallery-item single">
-                  <div class="demo-gallery">
-                    <div class="gallery-thumb">
-                      <a target="_blank" href="index-sp-layout3.html">
-                        <img class="img-fullwidth" alt="" src="http://placehold.it/530x570">
-                        <h4 class="mt-20 font-16 text-center text-white">Singlepage Layout 3</h4>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Portfolio Item End -->
-
-                <!-- Portfolio Item Start -->
-                <div class="gallery-item single">
-                  <div class="demo-gallery">
-                    <div class="gallery-thumb">
-                      <a target="_blank" href="index-sp-layout4.html">
-                        <img class="img-fullwidth" alt="" src="http://placehold.it/530x570">
-                        <h4 class="mt-20 font-16 text-center text-white">Singlepage Layout 4</h4>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Portfolio Item End -->
-
-                <!-- Portfolio Item Start -->
-                <div class="gallery-item single">
-                  <div class="demo-gallery">
-                    <div class="gallery-thumb">
-                      <a target="_blank" href="index-sp-layout5.html">
-                        <img class="img-fullwidth" alt="" src="http://placehold.it/530x570">
-                        <h4 class="mt-20 font-16 text-center text-white">Singlepage Layout 5</h4>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Portfolio Item End -->
-
-                <!-- Portfolio Item Start -->
-                <div class="gallery-item boxed">
-                  <div class="demo-gallery">
-                    <div class="gallery-thumb">
-                      <img class="img-fullwidth" alt="" src="http://placehold.it/530x570">
-                      <h4 class="mt-20 font-16 text-center text-white">Boxed Layout 1</h4>
-                      <div class="overlay2 text-center">
-                        <a class="btn btn-theme-colored mr-5 mb-5 btn-sm" target="_blank" href="index-boxed-sp-layout1.html">Single Page</a>
-                        <a class="btn btn-theme-colored mr-5 mb-5 btn-sm" target="_blank" href="index-boxed-mp-layout1.html">Multi Page</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Portfolio Item End -->
-
-                <!-- Portfolio Item Start -->
-                <div class="gallery-item boxed">
-                  <div class="demo-gallery">
-                    <div class="gallery-thumb">
-                      <img class="img-fullwidth" alt="" src="http://placehold.it/530x570">
-                      <h4 class="mt-20 font-16 text-center text-white">Boxed Layout 2</h4>
-                      <div class="overlay2 text-center">
-                        <a class="btn btn-theme-colored mr-5 mb-5 btn-sm" target="_blank" href="index-boxed-sp-layout2.html">Single Page</a>
-                        <a class="btn btn-theme-colored mr-5 mb-5 btn-sm" target="_blank" href="index-boxed-mp-layout2.html">Multi Page</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Portfolio Item End -->
-
-                <!-- Portfolio Item Start -->
-                <div class="gallery-item boxed">
-                  <div class="demo-gallery">
-                    <div class="gallery-thumb">
-                      <img class="img-fullwidth" alt="" src="http://placehold.it/530x570">
-                      <h4 class="mt-20 font-16 text-center text-white">Boxed Layout 3</h4>
-                      <div class="overlay2 text-center">
-                        <a class="btn btn-theme-colored mr-5 mb-5 btn-sm" target="_blank" href="index-boxed-sp-layout3.html">Single Page</a>
-                        <a class="btn btn-theme-colored mr-5 mb-5 btn-sm" target="_blank" href="index-boxed-mp-layout3.html">Multi Page</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Portfolio Item End -->
-
-                <!-- Portfolio Item Start -->
-                <div class="gallery-item boxed">
-                  <div class="demo-gallery">
-                    <div class="gallery-thumb">
-                      <img class="img-fullwidth" alt="" src="http://placehold.it/530x570">
-                      <h4 class="mt-20 font-16 text-center text-white">Boxed Layout 4</h4>
-                      <div class="overlay2 text-center">
-                        <a class="btn btn-theme-colored mr-5 mb-5 btn-sm" target="_blank" href="index-boxed-sp-layout4.html">Single Page</a>
-                        <a class="btn btn-theme-colored mr-5 mb-5 btn-sm" target="_blank" href="index-boxed-mp-layout4.html">Multi Page</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Portfolio Item End -->
-
-                <!-- Portfolio Item Start -->
-                <div class="gallery-item boxed">
-                  <div class="demo-gallery">
-                    <div class="gallery-thumb">
-                      <img class="img-fullwidth" alt="" src="http://placehold.it/530x570">
-                      <h4 class="mt-20 font-16 text-center text-white">Boxed Layout 5</h4>
-                      <div class="overlay2 text-center">
-                        <a class="btn btn-theme-colored mr-5 mb-5 btn-sm" target="_blank" href="index-boxed-sp-layout5.html">Single Page</a>
-                        <a class="btn btn-theme-colored mr-5 mb-5 btn-sm" target="_blank" href="index-boxed-mp-layout5.html">Multi Page</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Portfolio Item End -->
-
-                <!-- Portfolio Item Start -->
-                <div class="gallery-item rtl">
-                  <div class="demo-gallery">
-                    <div class="gallery-thumb">
-                      <a target="_blank" href="index-rtl-mp-layout1.html">
-                        <img class="img-fullwidth" alt="" src="http://placehold.it/530x570">
-                        <h4 class="mt-20 font-16 text-center text-white">RTL Layout 1</h4>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Portfolio Item End -->
-
-                <!-- Portfolio Item Start -->
-                <div class="gallery-item rtl">
-                  <div class="demo-gallery">
-                    <div class="gallery-thumb">
-                      <a target="_blank" href="index-rtl-mp-layout2.html">
-                        <img class="img-fullwidth" alt="" src="http://placehold.it/530x570">
-                        <h4 class="mt-20 font-16 text-center text-white">RTL Layout 2</h4>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Portfolio Item End -->
-
-                <!-- Portfolio Item Start -->
-                <div class="gallery-item rtl">
-                  <div class="demo-gallery">
-                    <div class="gallery-thumb">
-                      <a target="_blank" href="index-rtl-mp-layout3.html">
-                        <img class="img-fullwidth" alt="" src="http://placehold.it/530x570">
-                        <h4 class="mt-20 font-16 text-center text-white">RTL Layout 3</h4>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Portfolio Item End -->
-
-                <!-- Portfolio Item Start -->
-                <div class="gallery-item rtl">
-                  <div class="demo-gallery">
-                    <div class="gallery-thumb">
-                      <a target="_blank" href="index-rtl-mp-layout4.html">
-                        <img class="img-fullwidth" alt="" src="http://placehold.it/530x570">
-                        <h4 class="mt-20 font-16 text-center text-white">RTL Layout 4</h4>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Portfolio Item End -->
-
-                <!-- Portfolio Item Start -->
-                <div class="gallery-item rtl">
-                  <div class="demo-gallery">
-                    <div class="gallery-thumb">
-                      <a target="_blank" href="index-rtl-mp-layout5.html">
-                        <img class="img-fullwidth" alt="" src="http://placehold.it/530x570">
-                        <h4 class="mt-20 font-16 text-center text-white">RTL Layout 5</h4>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <!-- Portfolio Item End -->
-
-              </div>
-              <!-- End Portfolio Gallery Grid -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  
-    <!-- Divider: Call To Action  -->
-    <section id="herotemplates" class="divider parallax layer-overlay overlay-white-9" data-parallax-ratio="0.7" data-bg-img="http://placehold.it/1920x1280">
-      <div class="container pt-50 pb-50"> 
-        <!-- Section Content -->
-        <div class="section-content">
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <h2 class="">Slider Revolution Hero Templates (Ready to Use 60 Examples)</h2>
-              <p class="">These ready to use templates are included into the theme!</p>
-            </div>
-          </div>
-        </div>
-      </div>  
-    </section>
-    
-    <section>
-      <div id="event-layouts" class="container pt-30 pb-10">
-        <div class="row">
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-1-agency-website.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">1 Agency Website</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-1-agency-website.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-2-app-landing-page.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">2 App Landing Page</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-2-app-landing-page.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-3-carousel-classic.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">3 Carousel Classic</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-3-carousel-classic.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-4-carousel-gallery-instagram.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">4 Carousel Gallery Instagram</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-4-carousel-gallery-instagram.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-5-carousel-highlight.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">5 Carousel Highlight</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-5-carousel-highlight.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-6-carousel-media.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">6 Carousel Media</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-6-carousel-media.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-7-carousel-photography.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">7 Carousel Photography</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-7-carousel-photography.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-8-carousel-showcase.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">8 Carousel Showcase</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-8-carousel-showcase.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-9-christmas-snow.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">9 Christmas Snow</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-9-christmas-snow.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-10-clean-news-slider.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">10 Clean News Slider</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-10-clean-news-slider.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-11-coming-soon.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">11 Coming Soon</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-11-coming-soon.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-12-content-tabs.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">12 Content Tabs</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-12-content-tabs.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-13-desk-scene.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">13 Desk Scene</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-13-desk-scene.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-14-gallery-dark.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">14 Gallery Dark</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-14-gallery-dark.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-15-gallery-light.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">15 Gallery Light</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-15-gallery-light.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-16-gallery-news.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">16 Gallery News</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-16-gallery-news.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-17-gallery-slideshow.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">17 Gallery Slideshow</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-17-gallery-slideshow.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-18-gallery-vimeo.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">18 Gallery Vimeo</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-18-gallery-vimeo.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-19-gallery-youtube.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">19 Gallery Youtube</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-19-gallery-youtube.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-20-hero-image.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">20 Hero Images</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-20-hero-image.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-21-hero-news.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">21 Hero News</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-21-hero-news.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-22-hero-newsletter.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">22 Hero Newsletter</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-22-hero-newsletter.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-23-hero-search-form.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">23 Hero Search Form</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-23-hero-search-form.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-24-hero-sports.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">24 Hero Sports</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-24-hero-sports.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-25-hero-vimeo.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">25 Hero Vimeo</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-25-hero-vimeo.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-26-hero-web-product-dark.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">26 Hero Web Product Dark</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-26-hero-web-product-dark.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-27-hero-web-product-light.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">27 Hero Web Product Light</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-27-hero-web-product-light.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-28-hero-youtube.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">28 Hero Youtube</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-28-hero-youtube.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-29-image-gallery.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">29 Image Gallery</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-29-image-gallery.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-30-image-gallery.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">30 Image Gallery</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-30-image-gallery.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-31-main-feature-slider.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">31 Main Feature Slider</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-31-main-feature-slider.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-32-news-video.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">32 News Video</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-32-news-video.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-33-premium-4kvideos.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">33 Premium 4kvideos</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-33-premium-4kvideos.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-34-premium-agency.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">34 Premium Agency</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-34-premium-agency.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-35-premium-concept.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">35 Premium Concept</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-35-premium-concept.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-36-premium-content-zoom.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">36 Premium Content Zoom</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-36-premium-content-zoom.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-37-premium-creative-freedom.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">37 Premium Creative Freedom</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-37-premium-creative-freedom.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-38-premium-food-carousel.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">38 Premium Food Carousel</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-38-premium-food-carousel.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-39-premium-fullscreen-button.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">39 Premium Fullscreen Button</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-39-premium-fullscreen-button.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-40-premium-parallax-scene.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">40 Premium Parallax Scene</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-40-premium-parallax-scene.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-41-premium-restaurant.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">41 Premium Restaurant</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-41-premium-restaurant.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-42-premium-rotating-words.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">42 Premium Rotating Words</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-42-premium-rotating-words.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-43-premium-scroll-effects.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">43 Premium Scroll Effects</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-43-premium-scroll-effects.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-44-premium-sliding-overlays.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">44 Premium Sliding Sverlays</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-44-premium-sliding-overlays.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-45-premium-team-carousel.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">45 Premium Team Carousel</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-45-premium-team-carousel.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-46-premium-team-slider.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">46 Premium Team Slider</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-46-premium-team-slider.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-47-premium-travel.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">47 Premium Travel</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-47-premium-travel.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-48-premium-webproduct-hero.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">48 Premium Webproduct Hero</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-48-premium-webproduct-hero.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-49-premium-woocommerce.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">49 Premium Woocommerce</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-49-premium-woocommerce.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-50-sleek-landing-page.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">50 Sleek Landing Page</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-50-sleek-landing-page.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-51-slider-classic.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">51 Slider Classic</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-51-slider-classic.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-52-slider-classic-full.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">52 Slider Classic Full</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-52-slider-classic-full.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-53-slider-fashion.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">53 Slider Fashion</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-53-slider-fashion.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-54-slider-gym.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">54 Slider Gym</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-54-slider-gym.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-55-slider-highlight-showcase.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">55 Slider Highlight Showcase</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-55-slider-highlight-showcase.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-56-slider-highlight-showcase.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">56 Slider Highlight Showcase</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-56-slider-highlight-showcase.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-57-slider-media.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">57 Slider Media</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-57-slider-media.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-58-slider-notgeneric.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">58 Slider Notgeneric</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-58-slider-notgeneric.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-59-slider-photography.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">59 Slider Photography</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-59-slider-photography.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-60-slider-standard.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">60 Slider Standard</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-60-slider-standard.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-61-slider-verysimple.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">61 Slider Verysimple</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-61-slider-verysimple.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-          
-          <!-- Each Col Starts -->
-          <div class="col-sm-6 col-md-3 demo-box">
-            <div class="photo text-center">
-               <img alt="" class="img-thumbnail" src="http://kodesolution.com/demo/revslider-hero/screenshots/rev-slider-62-web-product-dark.jpg">
-            </div>
-            <div class="overlay2 text-center">
-              <h5 class="text-white">62 Web Product Dark</h5>
-              <a class="btn theme-skin-green text-white btn-sm" target="_blank" href="rev-slider-62-web-product-dark.html">View Demo</a>
-            </div>
-          </div>
-          <!-- Each Col Ends -->
-
-        </div>
-      </div>
-    </section>
-    
-    <section id="key-features" class="divider parallax layer-overlay overlay-white-9" data-bg-img="http://placehold.it/1920x1280" >
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="header-top bg-theme-colored sm-text-center">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 text-center">
-            <h2 class="mb-30 text-uppercase text-black">Key <span class="text-theme-colored">Features:</span></h2>
+          <div class="col-md-8">
+            <div class="widget no-border m-0">
+              <ul class="list-inline sm-text-center mt-5">
+                <!-- <li>
+                  <a href="#" class="text-white">FAQ</a>
+                </li>
+                <li class="text-white">|</li> -->
+                <li>
+                  <a href="https://www.facebook.com/Resurrection-Recovery-LLC-1580418382220181/">
+                    <i class="fa fa-facebook text-white"></i>
+                  </a>
+                </li>
+                <li class="text-white">|</li>
+                <li>
+                  <a href="#" class="text-white">651-702-2700</a>
+                </li>
+                <!-- <li class="text-white">|</li>
+                <li>
+                  <a href="#" class="text-white">Support</a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="widget no-border m-0">
+              <ul class="styled-icons icon-dark icon-circled icon-theme-colored icon-sm pull-right flip sm-pull-none sm-text-center mt-sm-15">
+                <!-- <li><a href="https://www.facebook.com/Resurrection-Recovery-LLC-1580418382220181/"><i class="fa fa-facebook text-white"></i></a></li> -->
+                <!-- <li><a href="#"><i class="fa fa-twitter text-white"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus text-white"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram text-white"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin text-white"></i></a></li> -->
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="row multi-row-clearfix">
-          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-            <div class="feature-box">
-              <div class="feature-box-icon">
-                <i class="fa fa-bold"></i>
-              </div>
-              <div class="feature-box-info">
-                <h5>Built with Bootstrap 3.x</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-            <div class="feature-box">
-              <div class="feature-box-icon">
-                <i class="fa fa-money"></i>
-              </div>
-              <div class="feature-box-info">
-                <h5>Slider Revolution <br><span class="font-14"><strong class="text-red">(Save $14)</strong></span></h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-            <div class="feature-box">
-              <div class="feature-box-icon">
-                <i class="fa fa-money"></i>
-              </div>
-              <div class="feature-box-info">
-                <h5>Menuzord Megamenu <br><span class="font-14"><strong class="text-red">(Save $7)</strong></span></h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-            <div class="feature-box">
-              <div class="feature-box-icon">
-                <i class="fa fa-adjust"></i>
-              </div>
-              <div class="feature-box-info">
-                <h5>12 Predefined Theme Color Skins</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-            <div class="feature-box">
-              <div class="feature-box-icon">
-                <i class="fa fa-television"></i>
-              </div>
-              <div class="feature-box-info">
-                <h5>Wide, Boxed & Onepage Layouts</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-            <div class="feature-box">
-              <div class="feature-box-icon">
-                <i class="fa fa-google"></i>
-              </div>
-              <div class="feature-box-info">
-                <h5>Google Fonts Supported</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-            <div class="feature-box">
-              <div class="feature-box-icon">
-                <i class="fa fa-shopping-cart"></i>
-              </div>
-              <div class="feature-box-info">
-                <h5>Shop Ready</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-            <div class="feature-box">
-              <div class="feature-box-icon">
-                <i class="fa fa-video-camera"></i>
-              </div>
-              <div class="feature-box-info">
-                <h5>Video Backgrounds</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-            <div class="feature-box">
-              <div class="feature-box-icon">
-                <i class="fa fa-magic"></i>
-              </div>
-              <div class="feature-box-info">
-                <h5>Parallax Effect</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-            <div class="feature-box">
-              <div class="feature-box-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </div>
-              <div class="feature-box-info">
-                <h5>Calendar</h5>
-              </div>
-            </div>
-          </div>
+      </div>
+    </div>
+    <div class="header-nav">
+      <div class="header-nav-wrapper navbar-scrolltofixed bg-white">
+        <div class="container">
+          <nav id="menuzord-right" class="menuzord default">
+            <a class="menuzord-brand pull-left flip" href="javascript:void(0)">
+              <img src="images/logo.png" alt="">
+            </a>
+            <ul class="menuzord-menu onepage-nav">
+              <li class="active"><a href="#home">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="mission.html">Mission</a></li>
+              <li><a href="philosophy.html">Philosophy</a></li>
+              <li><a href="team.html">Meet the Team</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Start main-content -->
+  <div class="main-content">
 
-          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-            <div class="feature-box">
-              <div class="feature-box-icon">
-                <i class="fa fa-picture-o"></i>
-              </div>
-              <div class="feature-box-info">
-                <h5>Photo Gallery</h5>
-              </div>
-            </div>
-          </div>
+    <!-- Section: home -->
+<!-- Section: home -->
+<section id="home" class="divider">
+  <div class="container-fluid p-0">
 
-          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-            <div class="feature-box">
-              <div class="feature-box-icon">
-                <i class="fa fa-th"></i>
-              </div>
-              <div class="feature-box-info">
-                <h5>Portfolio Grid, Masonry and Tiles</h5>
-              </div>
+    <!-- START REVOLUTION SLIDER 5.0.7 -->
+    <!-- <div id="rev_slider_home_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="news-gallery34" style="margin:0px auto;background-color:#ffffff;padding:0px;margin-top:0px;margin-bottom:0px;"> -->
+      <!-- START REVOLUTION SLIDER 5.0.7 fullwidth mode -->
+      <div id="rev_slider_home" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.0.7">
+        <ul>
+          <!-- SLIDE 1 -->
+          <li data-index="rs-1" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="http://placehold.it/1920x1280" data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Make an Impact">
+            <!-- MAIN IMAGE -->
+            <img src="images/blurryflower.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+            <!-- LAYERS -->
+            <!-- LAYER NR. 1 -->
+            <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" 
+              id="slide-1-layer-1" 
+              data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+              data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+              data-width="full"
+              data-height="full"
+              data-whitespace="normal"
+              data-transform_idle="o:1;"
+              data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
+              data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+              data-start="1000" 
+              data-basealign="slide" 
+              data-responsive_offset="on" 
+              style="z-index: 5;background-color:rgba(0, 0, 0, 0.15);border-color:rgba(0, 0, 0, 1.00);"> 
             </div>
-          </div>
+            <!-- LAYER NR. 3 -->
+            <!-- <div class="tp-caption tp-resizeme text-white rs-parallaxlevel-0" 
+              id="slide-1-layer-2" 
+              data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" 
+              data-y="['top','top','top','top']" data-voffset="['120','100','70','90']" 
+              data-fontsize="['28','24','24','24']"
+              data-lineheight="['33','30','30','30']"
+              data-fontweight="['600','600','600','600']"
+              data-width="none"
+              data-height="none"
+              data-whitespace="nowrap"
+              data-transform_idle="o:1;"
+              data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+              data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+              data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+              data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+              data-start="1000" 
+              data-splitin="none" 
+              data-splitout="none" 
+              data-responsive_offset="on" 
+              style="z-index: 7; white-space: nowrap;">
+              Seeking Treatment?
+            </div> -->
+            <!-- LAYER NR. 2 -->
+            <div class="tp-caption tp-resizeme text-white rs-parallaxlevel-0" 
+              id="slide-1-layer-3" 
+              data-x="['left','left','left','left']" data-hoffset="['50','50','50','30']" 
+              data-y="['top','top','top','top']" data-voffset="['85','135','105','130']" 
+              data-fontsize="['35','30','25','10']"
+              data-lineheight="['80','75','70','45']"
+              data-fontweight="['800','700','700','700']"
+              data-width="['700','650','600','420']"
+              data-height="none"
+              data-whitespace="normal"
+              data-transform_idle="o:1;"
+              data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+              data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+              data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+              data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+              data-start="1000" 
+              data-splitin="none" 
+              data-splitout="none" 
+              data-responsive_offset="on" 
+              style="z-index: 6; min-width: 600px; max-width: 600px; white-space: normal;">Resurrection Recovery welcome’s scheduled and walk-in Rule 25 Assessments. Call 651-702-2700 for more information
+            </div>
+            <!-- LAYER NR. 4 -->
+            <div class="tp-caption rs-parallaxlevel-0" 
+              id="slide-1-layer-4" 
+              data-x="['left','left','left','left']" data-hoffset="['53','53','53','30']" 
+              data-y="['top','top','top','top']" data-voffset="['430','371','331','245']" 
+              data-width="none"
+              data-height="none"
+              data-whitespace="nowrap"
+              data-transform_idle="o:1;"
+              data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+              data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+              data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+              data-mask_in="x:0px;y:0px;" 
+              data-mask_out="x:0;y:0;" 
+              data-start="1000" 
+              data-splitin="none" 
+              data-splitout="none" 
+              data-responsive_offset="on" 
+              data-responsive="off"
+              style="z-index: 8; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;"><a href="contact.html" class="btn btn-dark btn-theme-colored btn-xl">Connect with us</a> 
+              <!-- <a href="#" class="btn btn-dark btn-theme-colored btn-xl">Join Us</a> -->
+            </div>
+          </li>
 
-          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-            <div class="feature-box">
-              <div class="feature-box-icon">
-                <i class="fa fa-comments-o"></i>
-              </div>
-              <div class="feature-box-info">
-                <h5>Blog Pages <span class="font-size-xs">(Not Functional)</span></h5>
-              </div>
+          <!-- SLIDE 2 -->
+          <!-- <li data-index="rs-2" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="http://placehold.it/1920x1280" data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Make an Impact"> -->
+            <!-- MAIN IMAGE -->
+            <!-- <img src="http://placehold.it/1920x1280" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina> -->
+            <!-- LAYERS -->
+            <!-- LAYER NR. 1 -->
+            <!-- <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" 
+              id="slide-2-layer-1" 
+              data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+              data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+              data-width="full"
+              data-height="full"
+              data-whitespace="normal"
+              data-transform_idle="o:1;"
+              data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
+              data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+              data-start="1000" 
+              data-basealign="slide" 
+              data-responsive_offset="on" 
+              style="z-index: 5;background-color:rgba(0, 0, 0, 0.35);border-color:rgba(0, 0, 0, 1.00);"> 
+            </div> -->
+            <!-- LAYER NR. 3 -->
+            <!-- <div class="tp-caption tp-resizeme text-white rs-parallaxlevel-0" 
+              id="slide-2-layer-2" 
+              data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+              data-y="['top','top','top','top']" data-voffset="['120','100','70','90']" 
+              data-fontsize="['28','24','24','24']"
+              data-lineheight="['33','30','30','30']"
+              data-fontweight="['600','600','600','600']"
+              data-width="none"
+              data-height="none"
+              data-whitespace="nowrap"
+              data-transform_idle="o:1;"
+              data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+              data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+              data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+              data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+              data-start="1000" 
+              data-splitin="none" 
+              data-splitout="none" 
+              data-responsive_offset="on" 
+              style="z-index: 7; white-space: nowrap;">Conservation Means 
+            </div> -->
+            <!-- LAYER NR. 2 -->
+            <!-- <div class="tp-caption tp-resizeme text-white text-center rs-parallaxlevel-0" 
+              id="slide-2-layer-3" 
+              data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+              data-y="['top','top','top','top']" data-voffset="['165','135','105','130']" 
+              data-fontsize="['75','70','65','40']"
+              data-lineheight="['80','75','70','45']"
+              data-fontweight="['800','700','700','700']"
+              data-width="['700','650','600','420']"
+              data-height="none"
+              data-whitespace="normal"
+              data-transform_idle="o:1;"
+              data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+              data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+              data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+              data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+              data-start="1000" 
+              data-splitin="none" 
+              data-splitout="none" 
+              data-responsive_offset="on" 
+              style="z-index: 6; min-width: 600px; max-width: 600px; white-space: normal;">Make an Impact & Give back to Nature 
+            </div> -->
+            <!-- LAYER NR. 4 -->
+            <!-- <div class="tp-caption rs-parallaxlevel-0" 
+              id="slide-2-layer-4" 
+              data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+              data-y="['top','top','top','top']" data-voffset="['431','371','331','245']" 
+              data-width="none"
+              data-height="none"
+              data-whitespace="nowrap"
+              data-transform_idle="o:1;"
+              data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+              data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+              data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+              data-mask_in="x:0px;y:0px;" 
+              data-mask_out="x:0;y:0;" 
+              data-start="1000" 
+              data-splitin="none" 
+              data-splitout="none" 
+              data-responsive_offset="on" 
+              data-responsive="off"
+              style="z-index: 8; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;"><a href="#" class="btn btn-dark btn-theme-colored btn-xl">Help Save Acres</a>
             </div>
-          </div>
-          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-            <div class="feature-box">
-              <div class="feature-box-icon">
-                <i class="fa fa-tablet"></i>
-              </div>
-              <div class="feature-box-info">
-                <h5>100% Responsive</h5>
-              </div>
-            </div>
-          </div>
-          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-            <div class="feature-box">
-              <div class="feature-box-icon">
-                <i class="fa fa-search-plus"></i>
-              </div>
-              <div class="feature-box-info">
-                <h5>SEO Optimized</h5>
-              </div>
-            </div>
-          </div>
+          </li> -->
 
-          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-            <div class="feature-box">
-              <div class="feature-box-icon">
-                <i class="fa fa-mobile"></i>
-              </div>
-              <div class="feature-box-info">
-                <h5>Retina Ready!</h5>
-              </div>
+          <!-- SLIDE 3 -->
+          <!-- <li data-index="rs-3" data-transition="slidingoverlayhorizontal" data-slotamount="default" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="http://placehold.it/1920x1280" data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="1500" data-fsslotamount="7" data-saveperformance="off" data-title="Make an Impact"> -->
+            <!-- MAIN IMAGE -->
+            <!-- <img src="http://placehold.it/1920x1280" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina> -->
+            <!-- LAYERS -->
+            <!-- LAYER NR. 1 -->
+            <!-- <div class="tp-caption tp-shape tp-shapewrapper tp-resizeme rs-parallaxlevel-0" 
+              id="slide-3-layer-1" 
+              data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+              data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
+              data-width="full"
+              data-height="full"
+              data-whitespace="normal"
+              data-transform_idle="o:1;"
+              data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" 
+              data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" 
+              data-start="1000" 
+              data-basealign="slide" 
+              data-responsive_offset="on" 
+              style="z-index: 5;background-color:rgba(0, 0, 0, 0.25);border-color:rgba(0, 0, 0, 1.00);"> 
+            </div> -->
+            <!-- LAYER NR. 3 -->
+            <!-- <div class="tp-caption tp-resizeme text-white rs-parallaxlevel-0" 
+              id="slide-3-layer-2" 
+              data-x="['center','center','center','center']" data-hoffset="['153','33','0','0']" 
+              data-y="['top','top','top','top']" data-voffset="['120','100','70','90']" 
+              data-fontsize="['28','24','24','24']"
+              data-lineheight="['33','30','30','30']"
+              data-fontweight="['600','600','600','600']"
+              data-width="none"
+              data-height="none"
+              data-whitespace="nowrap"
+              data-transform_idle="o:1;"
+              data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+              data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+              data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+              data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+              data-start="1000" 
+              data-splitin="none" 
+              data-splitout="none" 
+              data-responsive_offset="on" 
+              style="z-index: 7; white-space: nowrap;">Conservation Means 
+            </div> -->
+            <!-- LAYER NR. 2 -->
+            <!-- <div class="tp-caption tp-resizeme text-white rs-parallaxlevel-0" 
+              id="slide-3-layer-3" 
+              data-x="['center','center','center','center']" data-hoffset="['310','33','0','0']" 
+              data-y="['top','top','top','top']" data-voffset="['165','135','105','130']" 
+              data-fontsize="['70','65','60','40']"
+              data-lineheight="['75','70','65','45']"
+              data-fontweight="['800','700','700','700']"
+              data-width="['600','550','500','420']"
+              data-height="none"
+              data-whitespace="normal"
+              data-transform_idle="o:1;"
+              data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+              data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+              data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" 
+              data-mask_out="x:0;y:0;s:inherit;e:inherit;" 
+              data-start="1000" 
+              data-splitin="none" 
+              data-splitout="none" 
+              data-responsive_offset="on" 
+              style="z-index: 6; min-width: 600px; max-width: 600px; white-space: normal;">Support Us & Give back to Nature 
+            </div> -->
+            <!-- LAYER NR. 4 -->
+            <!-- <div class="tp-caption rs-parallaxlevel-0" 
+              id="slide-3-layer-4" 
+              data-x="['center','center','center','center']" data-hoffset="['110','33','0','0']" 
+              data-y="['top','top','top','top']" data-voffset="['431','371','331','245']" 
+              data-width="none"
+              data-height="none"
+              data-whitespace="nowrap"
+              data-transform_idle="o:1;"
+              data-transform_hover="o:1;rX:0;rY:0;rZ:0;z:0;s:300;e:Power1.easeInOut;"
+              data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" 
+              data-transform_out="auto:auto;s:1000;e:Power3.easeInOut;" 
+              data-mask_in="x:0px;y:0px;" 
+              data-mask_out="x:0;y:0;" 
+              data-start="1000" 
+              data-splitin="none" 
+              data-splitout="none" 
+              data-responsive_offset="on" 
+              data-responsive="off"
+              style="z-index: 8; white-space: nowrap;outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;"><a href="#" class="btn btn-dark btn-theme-colored btn-xl">Help Save Acres</a>
+            </div>
+          </li> -->
+        </ul>
+        <!-- <div class="tp-bannertimer tp-bottom" style="height: 5px; background-color: rgba(166, 216, 236, 1.00);"></div> -->
+      </div>
+    <!-- </div> -->
+
+    <!-- END REVOLUTION SLIDER -->
+    <script type="text/javascript">
+      var tpj=jQuery;         
+      var revapi34;
+      tpj(document).ready(function() {
+        if(tpj("#rev_slider_home").revolution == undefined){
+          revslider_showDoubleJqueryError("#rev_slider_home");
+        }else{
+          revapi34 = tpj("#rev_slider_home").show().revolution({
+            sliderType:"standard",
+            jsFileLocation:"js/revolution-slider/js/",
+            sliderLayout:"fullwidth",
+            dottedOverlay:"none",
+            delay:9000,
+            navigation: {
+              keyboardNavigation:"on",
+              keyboard_direction: "horizontal",
+              mouseScrollNavigation:"off",
+              onHoverStop:"on",
+              touch:{
+                touchenabled:"on",
+                swipe_threshold: 75,
+                swipe_min_touches: 1,
+                swipe_direction: "horizontal",
+                drag_block_vertical: false
+              }
+              ,
+              arrows: {
+                style:"zeus",
+                enable:false,
+                hide_onmobile:true,
+                hide_under:600,
+                hide_onleave:true,
+                hide_delay:200,
+                hide_delay_mobile:1200,
+                tmp:'<div class="tp-title-wrap">    <div class="tp-arr-imgholder"></div> </div>',
+                left: {
+                  h_align:"left",
+                  v_align:"center",
+                  h_offset:30,
+                  v_offset:0
+                },
+                right: {
+                  h_align:"right",
+                  v_align:"center",
+                  h_offset:30,
+                  v_offset:0
+                }
+              },
+              bullets: {
+                enable:false,
+                hide_onmobile:true,
+                hide_under:600,
+                style:"metis",
+                hide_onleave:true,
+                hide_delay:200,
+                hide_delay_mobile:1200,
+                direction:"horizontal",
+                h_align:"center",
+                v_align:"bottom",
+                h_offset:0,
+                v_offset:30,
+                space:5,
+                tmp:'<span class="tp-bullet-img-wrap"><span class="tp-bullet-image"></span></span>'
+              }
+            },
+            viewPort: {
+              enable:true,
+              outof:"pause",
+              visible_area:"80%"
+            },
+            responsiveLevels:[1240,1024,778,480],
+            gridwidth:[1240,1024,778,480],
+            gridheight:[700,550,500,450],
+            lazyType:"none",
+            parallax: {
+              type:"scroll",
+              origo:"enterpoint",
+              speed:400,
+              levels:[5,10,15,20,25,30,35,40,45,50],
+            },
+            shadow:0,
+            spinner:"off",
+            stopLoop:"off",
+            stopAfterLoops:-1,
+            stopAtSlide:-1,
+            shuffle:"off",
+            autoHeight:"off",
+            hideThumbsOnMobile:"off",
+            hideSliderAtLimit:0,
+            hideCaptionAtLimit:0,
+            hideAllCaptionAtLilmit:0,
+            debugMode:false,
+            fallbacks: {
+              simplifyAll:"off",
+              nextSlideOnWindowFocus:"off",
+              disableFocusListener:false,
+            }
+          });
+        }
+      }); /*ready*/
+    </script>
+  <!-- END REVOLUTION SLIDER -->
+  </div>
+</section>
+
+   <!-- Section: Services  -->
+    <!-- <section id="services">
+      <div class="container">
+        <div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="title text-uppercase">Our Services</h2>
+              <p class="sub-title"></p>
             </div>
           </div>
-
-          <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-            <div class="feature-box">
-              <div class="feature-box-icon">
-                <i class="fa fa-bars"></i>
+        </div>
+        <div class="section-content">
+          <div class="row">
+            <div class="col-sm-6 col-md-6 mb-xs-20">
+              <div class="image-box text-center">
+                <div class="thumb">
+                  <img src="images/drug-test.svg" width="128" alt="">
+                </div>
+                <div class="image-box-details pt-20 pb-xs-20">
+                  <h4 class="title">Substance Use Services</h4>
+                   <p class="desc mb-10">Treatment for 20 hours per week, Monday-Friday</p>
+                  <a class="btn btn-dark btn-theme-colored mt-10" href="services.html">Read more</a>
+                </div>
               </div>
-              <div class="feature-box-info">
-                <h5>Built-in Mega Menu</h5>
+            </div>
+            <div class="col-sm-6 col-md-6 mb-xs-20">
+              <div class="image-box text-center">
+                <div class="thumb">
+                  <img src="images/heart.png" width="128" alt="">
+                </div>
+                <div class="image-box-details pt-20 pb-xs-20">
+                  <h4 class="title">Mental Health Services</h4>
+                  <p class="desc mb-10">Designed to help individuals stop or reduce harmful substance misuse</p>
+                  <a class="btn btn-dark btn-theme-colored mt-10" href="services.html">Read more</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
+    
+    <!-- Section: Our Philosophy -->
+    <!-- <section id="philosophy">
+      <div class="container">
+        <div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="title text-uppercase">Our Philosophy</h2>
+              <p class="sub-title">Our treatment philosophy is based on the following psychological principles:</p>
+            </div>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="row">
+            <div class="col-sm-3 col-md-3">
+              <div class="causes bg-white-f9 maxwidth500">
+                <div class="thumb">
+                  <img class="img-fullwidth" alt="" src="images/plant1.png" width="4px">
+                </div>
+                <div class="causes-details clearfix p-20 pt-0 text-center">
+                  <h4><a class="text-theme-colored" href="#">Client-Centered Care</a></h4>
+                  <h5></h5>
+                  <h6 class="text-black-777"></h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-md-3 mb-xs-20">
+              <div class="causes bg-white-f9 maxwidth500 mb-xs-30">
+                <div class="thumb">
+                  <img class="img-fullwidth" alt="" src="images/plant3.png">
+                </div>
+                <div class="causes-details clearfix p-20 pt-0 text-center">
+                  <h4><a class="text-theme-colored" href="#">Harm Reduction</a></h4>
+                  <h5></h5>
+                  <h6 class="text-black-777"></h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-md-3 mb-xs-20">
+              <div class="causes bg-white-f9 maxwidth500 mb-xs-30">
+                <div class="thumb">
+                  <img class="img-fullwidth" alt="" src="images/plant2.png">
+                </div>
+                <div class="causes-details clearfix p-20 pt-0 text-center">
+                  <h4><a class="text-theme-colored" href="#">Stages of Change</a></h4>
+                  <h5></h5>
+                  <h6 class="text-black-777"></h6>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 col-md-3">
+              <div class="causes bg-white-f9 maxwidth500">
+                <div class="thumb">
+                  <img class="img-fullwidth" alt="" src="images/plant5.png" width="4px">
+                </div>
+                <div class="causes-details clearfix p-20 pt-0 text-center">
+                  <h4><a class="text-theme-colored" href="#">Trauma-informed Care</a></h4>
+                  <h5></h5>
+                  <h6 class="text-black-777"></h6>
+                </div>
+              </div>
+            </div>
+            </div>
+            <br><br>
+            <h5 class="text-black-777 text-center">We meet each client where they are, offering support to achieve their treatment goals with respect to culture, language and orientation.  We believe in doing more than treating a diagnosis - we treat people, each with unique needs, experiences, and belief systems.</h6>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Section: Meet the Team  -->
+    <!-- <section id="meet" class="divider parallax layer-overlay overlay-dark-9">
+      <div class="container">
+        <div class="section-title text-center">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="title text-uppercase text-white">Meet the Team</h2> -->
+              <!-- <p class="sub-title text-white">We aim to provide individualized treatment for men and women who experience chronic homelessness, substance use and co-occurring mental health issues with the goal of improving their health, well-being and quality of life</p> -->
+            <!-- </div>
+          </div>
+        </div>
+        <div class="section-content">
+          <div class="row">
+            <div class="col-sm-3 col-md-3 mb-xs-20">
+              <div class="thumb">
+                <img class="img-fullwidth" alt="" src="images/eric.jpg">
+              </div>
+              <div class="p-20 bg-white text-center">
+                <h4 class="text-theme-colored mt-0">Eric Peterson</h4> -->
+                <!-- <p class="mb-10">Lorem ipsum dolor sit amet, consecte tur adipisi cing elit eius suscipit illum libero dolor nobis ullam dicta lorem ipsum dolor sit amet</p> -->
+                <!-- <a class="btn btn-dark btn-theme-colored mt-10" href="#">Read more</a>
+              </div>
+            </div>
+            <div class="col-sm-3 col-md-3 mb-xs-20">
+              <div class="thumb">
+                <img class="img-fullwidth" alt="" src="images/eric.jpg">
+              </div>
+              <div class="p-20 bg-white text-center">
+                <h4 class="text-theme-colored mt-0">Julie Hooker</h4> -->
+                <!-- <p class="mb-10">Lorem ipsum dolor sit amet, consecte tur adipisi cing elit eius suscipit illum libero dolor nobis ullam dicta lorem ipsum dolor sit amet</p> -->
+                <!-- <a class="btn btn-dark btn-theme-colored mt-10" href="#">Read more</a>
+              </div>
+            </div>
+            <div class="col-sm-3 col-md-3">
+              <div class="thumb">
+                <img class="img-fullwidth" alt="" src="images/eric.jpg">
+              </div>
+              <div class="p-20 bg-white text-center">
+                <h4 class="text-theme-colored mt-0">Sandra Tallman</h4> -->
+                <!-- <p class="mb-10">Lorem ipsum dolor sit amet, consecte tur adipisi cing elit eius suscipit illum libero dolor nobis ullam dicta lorem ipsum dolor sit amet</p> -->
+                <!-- <a class="btn btn-dark btn-theme-colored mt-10" href="#">Read more</a>
+              </div>
+            </div>
+            <div class="col-sm-3 col-md-3">
+              <div class="thumb">
+                <img class="img-fullwidth" alt="" src="images/eric.jpg">
+              </div>
+              <div class="p-20 bg-white text-center">
+                <h4 class="text-theme-colored mt-0">Laurie Tatreau</h4> -->
+                <!-- <p class="mb-10">Lorem ipsum dolor sit amet, consecte tur adipisi cing elit eius suscipit illum libero dolor nobis ullam dicta lorem ipsum dolor sit amet</p> -->
+                <!-- <a class="btn btn-dark btn-theme-colored mt-10" href="#">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Divider: Contact -->
+    <!-- <section id="contact" class="bg-light">
+      <div class="container pb-sm-10">
+        <div class="row">
+          <div class="col-md-5">
+            <div class="contact-details bg-white border-theme-color-1px p-30 pt-40 pr-20 pb-60">
+              <h3 class="font-24 mb-20">We Treat, Prevent, and Support. <span class="text-theme-colored">Connect</span> with us</h3>
+              <p>We are located on St. Paul's East side, conveniently off I-94 E. Exit on Ruth Street, right to Suburban Ave. Left in to Scenic Hills Mall on the east side of the building. </p>
+              <ul class="list-icon theme-colored square mt-30">
+                <li><i class="fa fa-map-marker text-white"></i><span class="font-weight-600 text-black-222">Address: </span>2002 Suburban Avenue St. Paul, MN  55119</li>
+                <li><i class="fa fa-phone text-white"></i><span class="font-weight-600 text-black-222">Phone: </span>(651) 702-2700</li>
+                <li><i class="fa fa-envelope-o text-white"></i><span class="font-weight-600 text-black-222">Email: </span>julieh@resurrectionrecovery.com</li>
+                <li><i class="fa fa-clock-o text-white"></i><span class="font-weight-600 text-black-222">Hours: </span>Monday - Friday | 8:30 AM - 4:30 PM ​</li>
+                <li><i class="fa fa-fax text-white"></i><span class="font-weight-600 text-black-222">Fax: </span>(651) 702-2639 ​</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <h3 class="line-bottom mt-0 mb-20 mt-sm-30">Leave Your <span class="text-theme-colored">Comment</span> Here</h3> -->
+            <!-- <p class="mb-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error optio in quia ipsum quae neque alias eligendi, nulla nisi. Veniam ut quis similique culpa natus dolor aliquam officiis ratione libero. Expedita asperiores aliquam provident amet dolores.</p> -->
+            <!-- Contact Form -->
+            <!-- <form id="contact_form" name="contact_form" class="" action="includes/sendmail.php" method="post">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input name="form_name" class="form-control" type="text" placeholder="Enter Name" required="">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input name="form_email" class="form-control required email" type="email" placeholder="Enter Email">
+                  </div>
+                </div>
+              </div>
+                
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input name="form_subject" class="form-control required" type="text" placeholder="Enter Subject">
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="form-group">
+                    <input name="form_phone" class="form-control" type="text" placeholder="Enter Phone">
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <textarea name="form_message" class="form-control required" rows="5" placeholder="Enter Message"></textarea>
+              </div>
+              <div class="form-group">
+                <input name="form_botcheck" class="form-control" type="hidden" value="" />
+                <button type="submit" class="btn btn-flat btn-theme-colored text-uppercase mt-10 mb-sm-30 border-left-theme-color-2-4px" data-loading-text="Please wait...">Send your message</button>
+                <button type="reset" class="btn btn-flat btn-theme-colored text-uppercase mt-10 mb-sm-30 border-left-theme-color-2-4px">Reset</button>
+              </div>
+            </form> -->
+
+            <!-- Contact Form Validation-->
+            <!-- <script type="text/javascript">
+              $("#contact_form").validate({
+                submitHandler: function(form) {
+                  var form_btn = $(form).find('button[type="submit"]');
+                  var form_result_div = '#form-result';
+                  $(form_result_div).remove();
+                  form_btn.before('<div id="form-result" class="alert alert-success" role="alert" style="display: none;"></div>');
+                  var form_btn_old_msg = form_btn.html();
+                  form_btn.html(form_btn.prop('disabled', true).data("loading-text"));
+                  $(form).ajaxSubmit({
+                    dataType:  'json',
+                    success: function(data) {
+                      if( data.status == 'true' ) {
+                        $(form).find('.form-control').val('');
+                      }
+                      form_btn.prop('disabled', false).html(form_btn_old_msg);
+                      $(form_result_div).html(data.message).fadeIn('slow');
+                      setTimeout(function(){ $(form_result_div).fadeOut('slow') }, 6000);
+                    }
+                  });
+                }
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </section> -->
   </div>
   <!-- end main-content -->
   
   <!-- Footer -->
-  <footer id="footer" class="footer text-center pb-0" data-bg-img="images/pattern/p15.png">
-    <div class="container pt-80 pb-80">
-      <div class="row">
-        <div class="col-md-12">  
-          <p class="m-0 font-12">Copyright &copy;2015 <a href="#">ThemeMascot</a></p>
+  <footer id="footer" class="footer bg-black-222" data-bg-img="images/footer-bg.png">
+    <div class="footer-bottom bg-black-333">
+      <div class="container pt-20 pb-20">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="font-11 text-black-777 m-0">Copyright &copy; 2020 Resurrection Recovery LLC. All Rights Reserved</p>
+          </div>
+          <div class="col-md-6 text-right">
+            <div class="widget no-border m-0">
+              <ul class="list-inline sm-text-center mt-5 font-12">
+                <li>
+                  <a href="https://www.facebook.com/Resurrection-Recovery-LLC-1580418382220181/">
+                    <i class="fa fa-facebook text-gray-darkgray"></i>
+                  </a>
+                </li>
+                <li>|</li>
+                <li>
+                  <a href="#">651-702-2700</a>
+                </li>
+                <!-- <li>|</li>
+                <li>
+                  <a href="#">Support</a>
+                </li> -->
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </footer>
-  <a class="scrollToTop bg-theme-colored" href="#"><i class="fa fa-angle-up"></i></a></div>
+  <a class="scrollToTop" href="#"><i class="fa fa-angle-up"></i></a>
+</div>
 <!-- end wrapper -->
 
 <!-- Footer Scripts -->
 <!-- JS | Custom script for all pages -->
 <script src="js/custom.js"></script>
+
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
+      (Load Extensions only on Local File Systems ! 
+       The following part can be removed on Server for On Demand Loading) -->
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.carousel.min.js"></script>
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="js/revolution-slider/js/extensions/revolution.extension.video.min.js"></script>
 
 </body>
 </html>
