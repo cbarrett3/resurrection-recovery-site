@@ -6719,3 +6719,36 @@ body.has-fixed-footer .main-content {
   color: #fff;
   margin-left: 10px;
 }
+
+.home-background {
+  background-image: url(../images/blurryflower-editted.jpg);
+  height: 100%;
+  max-width: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-content {
+  /* margin-top: 15vh; */
+  padding-left: 6vw;
+  color: rgb(53, 54, 54);
+  /* min-width: 80vw; */
+  max-width: 50vw;
+  padding-top: 8vh;
+  white-space: normal;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+}
+
+.background-test {
+  background-image: url(../images/blurryflower-editted.jpg);
+}
+
+.outter-bio-box {
+  border-radius: 5px;
+}
+
+.bio-box {
+  /* color: black; */
+  margin: 10px;
+}
