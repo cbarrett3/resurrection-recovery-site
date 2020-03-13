@@ -6728,13 +6728,24 @@ body.has-fixed-footer .main-content {
   background-repeat: no-repeat;
 }
 
-.home-content {
+.home-content-title {
   /* margin-top: 15vh; */
   padding-left: 6vw;
   color: rgb(53, 54, 54);
   /* min-width: 80vw; */
   max-width: 50vw;
   padding-top: 8vh;
+  white-space: normal;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+}
+.home-content {
+  /* margin-top: 15vh; */
+  /* padding-left: 6vw; */
+  color: rgb(53, 54, 54);
+  /* min-width: 80vw; */
+  max-width: 700vw;
+  padding-top: 4vh;
   white-space: normal;
   font-family: 'Open Sans', sans-serif;
   font-size: 30px;
@@ -6751,4 +6762,8 @@ body.has-fixed-footer .main-content {
 .bio-box {
   /* color: black; */
   margin: 10px;
+}
+
+.person {
+  outline: 2px;
 }
